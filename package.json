@@ -1,0 +1,16 @@
+{
+  "name": "hottea",
+  "version": "1.0.0",
+  "description": "A simple static website hosted on Firebase",
+  "main": "index.html",
+  "scripts": {
+    "start": "firebase serve", 
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^10.0.0"
+  },
+  "author": "Seedy",
+  "license": "ISC"
+}

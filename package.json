@@ -1,0 +1,25 @@
+{
+  "name": "hottea-website",
+  "version": "1.0.0",
+  "description": "Hottea - 专为茶爱好者设计的移动应用官网",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Building static website...' && mkdir -p dist && cp -r public/* dist/",
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "tea",
+    "mobile-app",
+    "website",
+    "static"
+  ],
+  "author": "Hottea Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

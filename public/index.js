@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// 设置静态文件目录
-app.use(express.static(path.join(__dirname, 'public')));
+// 设置静态文件目录 - 现在所有文件都在当前目录
+app.use(express.static(__dirname));
 
 // 健康检查端点
 app.get('/health', (req, res) => {
@@ -14,7 +14,7 @@ app.get('/health', (req, res) => {
 
 // 处理所有路由，返回index.html（SPA支持）
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {

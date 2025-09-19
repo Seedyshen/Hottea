@@ -1,5 +1,7 @@
 runtime: nodejs20
 
+entrypoint: node index.js
+
 env_variables:
   NODE_ENV: production
   PORT: 8080

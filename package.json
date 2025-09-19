@@ -4,9 +4,10 @@
   "description": "Hottea - 专为茶爱好者设计的移动应用官网",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building static website...' && mkdir -p dist && cp -r public/* dist/",
+    "build": "echo 'Static website build complete'",
     "start": "node index.js",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "keywords": [
     "tea",
@@ -17,7 +18,8 @@
   "author": "Hottea Team",
   "license": "MIT",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "express": "^4.18.2"

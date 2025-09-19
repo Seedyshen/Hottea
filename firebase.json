@@ -1,6 +1,6 @@
 {
   "apphosting": {
-    "source": ".",
+    "source": "./public",
     "runConfig": {
       "runtime": "nodejs20"
     }

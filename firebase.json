@@ -2,10 +2,7 @@
   "apphosting": {
     "source": ".",
     "runConfig": {
-      "runtime": "nodejs20",
-      "env": {
-        "NODE_ENV": "production"
-      }
+      "runtime": "nodejs20"
     }
   }
 }

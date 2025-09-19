@@ -1,9 +1,0 @@
-[[build.buildpacks]]
-id = "heroku/nodejs"
-
-[[build.buildpacks]]
-id = "gcr.io/buildpacks/nodejs"
-
-[build.env]
-NODE_ENV = "production"
-PORT = "8080"

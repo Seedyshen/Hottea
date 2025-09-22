@@ -52,6 +52,14 @@
         "function": "app"
       },
       {
+        "source": "/safety-tools",
+        "function": "app"
+      },
+      {
+        "source": "/safety_tools",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -1,112 +1,132 @@
-/* Community Guidelines 页面样式 */
+/* Community Guidelines Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .guidelines-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
-    line-height: 1.6;
-    color: #333;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
+/* Header Section */
 .guidelines-header {
     text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
-    background: linear-gradient(135deg, #ff6b6b, #ffa500);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    margin-bottom: 40px;
+    padding: 40px 0;
 }
 
-.guidelines-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.guidelines-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin: 0;
-}
-
-.guidelines-section {
-    background: white;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #ff6b6b;
-}
-
-.guidelines-section h2 {
-    color: #ff6b6b;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.guidelines-section h2::before {
-    content: "🛡️";
-    font-size: 1.5rem;
-}
-
-.guidelines-section h3 {
-    color: #333;
-    font-size: 1.4rem;
-    margin: 1.5rem 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #f0f0f0;
-}
-
-.guidelines-list {
-    list-style: none;
-    padding: 0;
-}
-
-.guidelines-list li {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 3px solid #ffa500;
-    position: relative;
-}
-
-.guidelines-list li::before {
-    content: "✓";
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #28a745;
-    color: white;
-    width: 20px;
-    height: 20px;
+.header-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
+    margin: 0 auto 24px;
+    font-size: 36px;
+    color: white;
     font-weight: bold;
+    box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
 }
 
-.guidelines-list li strong {
-    color: #ff6b6b;
+.guidelines-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    color: #666;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Introduction */
+.guidelines-intro {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 48px;
+    border: 1px solid #e9ecef;
+}
+
+.guidelines-intro p {
+    font-size: 18px;
+    color: #495057;
+    text-align: center;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Guidelines Sections */
+.guidelines-section {
+    margin-bottom: 48px;
+}
+
+.guidelines-section h2 {
+    font-size: 32px;
     font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
 }
 
+/* Behavior Items */
+.behavior-item {
+    margin-bottom: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.behavior-item:last-child {
+    border-bottom: none;
+}
+
+.behavior-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.behavior-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Zero Tolerance Section */
 .zero-tolerance {
-    background: linear-gradient(135deg, #dc3545, #c82333);
-    color: white;
-    border-left: 4px solid #a71e2a;
+    background: #fff5f5;
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid #fed7d7;
+    margin-bottom: 48px;
 }
 
-.zero-tolerance h3 {
-    color: white;
-    border-bottom-color: rgba(255, 255, 255, 0.3);
+.zero-tolerance h2 {
+    color: #c53030;
+    margin-bottom: 24px;
 }
 
 .zero-tolerance-list {
@@ -115,96 +135,194 @@
 }
 
 .zero-tolerance-list li {
-    background: rgba(255, 255, 255, 0.1);
-    border-left: 3px solid #fff;
-    color: white;
+    font-size: 16px;
+    color: #2d3748;
+    margin-bottom: 12px;
+    padding-left: 0;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
-.zero-tolerance-list li::before {
-    content: "⚠️";
-    background: #ffc107;
-    color: #212529;
+.zero-tolerance-list li:last-child {
+    margin-bottom: 0;
 }
 
-.contact-info {
-    background: linear-gradient(135deg, #17a2b8, #138496);
-    color: white;
-    text-align: center;
-    border-left: 4px solid #0c5460;
+/* Profile Items */
+.profile-item {
+    margin-bottom: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid #f1f3f4;
 }
 
-.contact-info h3 {
-    color: white;
-    border-bottom-color: rgba(255, 255, 255, 0.3);
+.profile-item:last-child {
+    border-bottom: none;
 }
 
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.contact-email {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 1rem;
-    border-radius: 8px;
+.profile-item h3 {
+    font-size: 20px;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
 }
 
-/* 响应式设计 */
+.profile-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Content List */
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.content-list li {
+    font-size: 16px;
+    color: #2d3748;
+    margin-bottom: 12px;
+    padding-left: 0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.content-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .guidelines-container {
-        padding: 1rem;
+        padding: 20px 16px;
     }
     
     .guidelines-header {
-        padding: 1.5rem 1rem;
-        margin-bottom: 2rem;
+        padding: 20px 0;
+        margin-bottom: 32px;
+    }
+    
+    .header-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 28px;
+        margin-bottom: 20px;
     }
     
     .guidelines-header h1 {
-        font-size: 2rem;
+        font-size: 36px;
+        margin-bottom: 12px;
     }
     
-    .guidelines-header p {
-        font-size: 1rem;
+    .header-subtitle {
+        font-size: 18px;
+    }
+    
+    .guidelines-intro {
+        padding: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .guidelines-intro p {
+        font-size: 16px;
     }
     
     .guidelines-section {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 32px;
     }
     
     .guidelines-section h2 {
-        font-size: 1.5rem;
+        font-size: 28px;
+        margin-bottom: 24px;
     }
     
-    .guidelines-section h3 {
-        font-size: 1.2rem;
+    .zero-tolerance {
+        padding: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .behavior-item,
+    .profile-item {
+        padding: 16px 0;
+        margin-bottom: 24px;
+    }
+    
+    .behavior-item h3,
+    .profile-item h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .behavior-item p,
+    .profile-item p {
+        font-size: 15px;
+    }
+    
+    .zero-tolerance-list li,
+    .content-list li {
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 }
 
-/* 动画效果 */
-.guidelines-section {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+@media (max-width: 480px) {
+    .guidelines-container {
+        padding: 16px 12px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    
+    .guidelines-header h1 {
+        font-size: 32px;
+    }
+    
+    .header-subtitle {
+        font-size: 16px;
+    }
+    
+    .guidelines-intro {
+        padding: 20px;
+    }
+    
+    .guidelines-section h2 {
+        font-size: 24px;
+    }
+    
+    .zero-tolerance {
+        padding: 20px;
     }
 }
 
-.guidelines-list li {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-.guidelines-list li:hover {
-    transform: translateX(5px);
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid #ff6b6b;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .guidelines-container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .header-icon {
+        background: #666 !important;
+        box-shadow: none;
+    }
+    
+    .zero-tolerance {
+        background: #f5f5f5 !important;
+        border: 1px solid #ccc !important;
+    }
+    
+    .guidelines-intro {
+        background: #f9f9f9 !important;
+        border: 1px solid #ddd !important;
+    }
 }

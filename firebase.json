@@ -60,6 +60,14 @@
         "function": "app"
       },
       {
+        "source": "/staying-safe-online",
+        "function": "app"
+      },
+      {
+        "source": "/staying_safe_online",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -14,6 +14,12 @@ app.get('/health', (req, res) => {
 
 // 处理特定路由
 app.get('/community-guidelines', (req, res) => {
+  // 设置缓存控制头，强制刷新缓存
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
   res.sendFile(path.join(__dirname, 'community-guidelines.html'));
 });
 

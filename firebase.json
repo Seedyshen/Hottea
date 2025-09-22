@@ -40,11 +40,11 @@
         "function": "app"
       },
       {
-        "source": "/what-happens-after-you-report",
+        "source": "/happens-report",
         "function": "app"
       },
       {
-        "source": "/what_happens_after_you_report",
+        "source": "/happens_report",
         "function": "app"
       },
       {

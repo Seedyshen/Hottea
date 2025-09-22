@@ -40,6 +40,14 @@
         "function": "app"
       },
       {
+        "source": "/what-happens-after-you-report",
+        "function": "app"
+      },
+      {
+        "source": "/what_happens_after_you_report",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

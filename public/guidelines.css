@@ -76,6 +76,19 @@ body {
     font-weight: 400;
 }
 
+/* Remember Section - No background or border */
+.remember-section {
+    margin-bottom: 48px;
+}
+
+.remember-section p {
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
 /* Guidelines Sections */
 .guidelines-section {
     margin-bottom: 48px;

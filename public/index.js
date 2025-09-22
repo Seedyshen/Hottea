@@ -12,7 +12,17 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// 处理所有路由，返回index.html（SPA支持）
+// 处理特定路由
+app.get('/community-guidelines', (req, res) => {
+  res.sendFile(path.join(__dirname, 'community-guidelines.html'));
+});
+
+// 处理根路径和其他路由，返回index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// 处理其他未匹配的路由，返回index.html（SPA支持）
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });

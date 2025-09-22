@@ -606,20 +606,20 @@ body {
   opacity: 0.6;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
 @media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-  
   .hero-container {
     grid-template-columns: 1fr;
-    text-align: center;
     gap: 2rem;
+    text-align: center;
   }
   
   .hero-title {
     font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
   }
   
   .hero-buttons {
@@ -631,17 +631,9 @@ body {
     height: 480px;
   }
   
-  .download-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
-  .download-buttons {
-    justify-content: center;
-  }
-  
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
   .screenshots-grid {
@@ -653,11 +645,29 @@ body {
     width: 180px;
     height: 360px;
   }
+  
+  .download-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .download-buttons {
+    justify-content: center;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
+  }
+  
+  .hero {
+    padding-top: 60px;
   }
   
   .hero-title {
@@ -668,12 +678,17 @@ body {
     font-size: 1rem;
   }
   
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
   .section-header h2 {
     font-size: 2rem;
   }
   
-  .download-text h2 {
-    font-size: 2rem;
+  .feature-item {
+    padding: 2rem 1.5rem;
   }
   
   .download-buttons {
@@ -681,14 +696,82 @@ body {
     align-items: center;
   }
   
-  .phone-mockup {
-    width: 200px;
-    height: 400px;
+  .download-btn {
+    width: 100%;
+    max-width: 280px;
   }
   
-  .phone-frame {
-    width: 200px;
-    height: 400px;
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Performance Optimizations */
+.hero::before {
+  will-change: opacity;
+}
+
+.feature-item,
+.btn {
+  will-change: transform;
+}
+
+/* Accessibility Improvements */
+.btn:focus,
+.nav-link:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.feature-item:focus-within {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--primary-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav,
+  .hero-buttons,
+  .download-buttons,
+  .footer {
+    display: none;
+  }
+  
+  .hero {
+    background: none;
+    color: black;
+  }
+  
+  .hero-title,
+  .section-header h2 {
+    color: black;
   }
 }
 

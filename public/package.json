@@ -6,20 +6,28 @@
   "scripts": {
     "build": "echo 'Build completed successfully'",
     "start": "node index.js",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "keywords": [
     "tea",
     "mobile-app",
     "website",
-    "static"
+    "firebase",
+    "app-hosting"
   ],
   "author": "Hottea Team",
   "license": "MIT",
   "engines": {
-    "node": "20"
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hottea-team/hottea-website"
+  },
+  "homepage": "https://hottea.online"
 }

@@ -1,0 +1,210 @@
+/* Community Guidelines 页面样式 */
+
+.guidelines-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.guidelines-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.guidelines-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.guidelines-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.guidelines-section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff6b6b;
+}
+
+.guidelines-section h2 {
+    color: #ff6b6b;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.guidelines-section h2::before {
+    content: "🛡️";
+    font-size: 1.5rem;
+}
+
+.guidelines-section h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.guidelines-list {
+    list-style: none;
+    padding: 0;
+}
+
+.guidelines-list li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #ffa500;
+    position: relative;
+}
+
+.guidelines-list li::before {
+    content: "✓";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #28a745;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.guidelines-list li strong {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.zero-tolerance {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+    border-left: 4px solid #a71e2a;
+}
+
+.zero-tolerance h3 {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.zero-tolerance-list {
+    list-style: none;
+    padding: 0;
+}
+
+.zero-tolerance-list li {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #fff;
+    color: white;
+}
+
+.zero-tolerance-list li::before {
+    content: "⚠️";
+    background: #ffc107;
+    color: #212529;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #17a2b8, #138496);
+    color: white;
+    text-align: center;
+    border-left: 4px solid #0c5460;
+}
+
+.contact-info h3 {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-email {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .guidelines-container {
+        padding: 1rem;
+    }
+    
+    .guidelines-header {
+        padding: 1.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .guidelines-header h1 {
+        font-size: 2rem;
+    }
+    
+    .guidelines-header p {
+        font-size: 1rem;
+    }
+    
+    .guidelines-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .guidelines-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .guidelines-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* 动画效果 */
+.guidelines-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.guidelines-list li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guidelines-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}

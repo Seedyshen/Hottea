@@ -1,0 +1,27 @@
+{
+  "name": "Hottea - 让生活更有温度",
+  "short_name": "Hottea",
+  "description": "专为茶爱好者设计的移动应用，提供个性化的茶叶推荐、冲泡指导和社区交流功能。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2c5530",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}

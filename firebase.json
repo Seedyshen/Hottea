@@ -32,6 +32,14 @@
         "function": "app"
       },
       {
+        "source": "/taking-action",
+        "function": "app"
+      },
+      {
+        "source": "/taking_action",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

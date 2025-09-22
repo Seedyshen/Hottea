@@ -2,7 +2,23 @@
   "apphosting": {
     "source": "./public",
     "runConfig": {
-      "runtime": "nodejs20"
+      "runtime": "nodejs20",
+      "env": {
+        "NODE_ENV": "production"
+      }
     }
+  },
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "/community-guidelines",
+        "function": "app"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }

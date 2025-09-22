@@ -16,6 +16,10 @@
         "function": "app"
       },
       {
+        "source": "/spotting-scammers",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

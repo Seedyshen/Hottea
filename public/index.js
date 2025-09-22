@@ -23,6 +23,17 @@ app.get('/community-guidelines', (req, res) => {
   res.sendFile(path.join(__dirname, 'community-guidelines.html'));
 });
 
+// 处理spotting-scammers路由
+app.get('/spotting-scammers', (req, res) => {
+  // 设置缓存控制头，强制刷新缓存
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
+  res.sendFile(path.join(__dirname, 'spotting-scammers.html'));
+});
+
 // 处理根路径和其他路由，返回index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));

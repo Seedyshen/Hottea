@@ -68,6 +68,14 @@
         "function": "app"
       },
       {
+        "source": "/terms-of-use",
+        "function": "app"
+      },
+      {
+        "source": "/terms_of_use",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -160,6 +160,27 @@ app.get('/staying_safe_online', (req, res) => {
   res.sendFile(path.join(__dirname, 'staying-safe-online.html'));
 });
 
+// 处理terms-of-use路由（支持连字符和下划线两种格式）
+app.get('/terms-of-use', (req, res) => {
+  // 设置缓存控制头，强制刷新缓存
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
+  res.sendFile(path.join(__dirname, 'terms-of-use.html'));
+});
+
+app.get('/terms_of_use', (req, res) => {
+  // 设置缓存控制头，强制刷新缓存
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
+  res.sendFile(path.join(__dirname, 'terms-of-use.html'));
+});
+
 // 处理根路径和其他路由，返回index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));

@@ -20,6 +20,10 @@
         "function": "app"
       },
       {
+        "source": "/spotting_scammers",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

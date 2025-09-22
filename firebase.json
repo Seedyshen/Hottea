@@ -48,6 +48,10 @@
         "function": "app"
       },
       {
+        "source": "/verification",
+        "function": "app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

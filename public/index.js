@@ -107,6 +107,17 @@ app.get('/what_happens_after_you_report', (req, res) => {
   res.sendFile(path.join(__dirname, 'what-happens-after-you-report.html'));
 });
 
+// 处理verification路由（支持连字符和下划线两种格式）
+app.get('/verification', (req, res) => {
+  // 设置缓存控制头，强制刷新缓存
+  res.set({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0'
+  });
+  res.sendFile(path.join(__dirname, 'verification.html'));
+});
+
 // 处理根路径和其他路由，返回index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));

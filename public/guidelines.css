@@ -104,9 +104,9 @@ body {
 
 /* Behavior Items */
 .behavior-item {
-    margin-bottom: 32px;
-    padding: 24px 0;
-    border-bottom: 1px solid #f1f3f4;
+    margin-bottom: 16px;
+    padding: 10px 0;
+    border-bottom: none;
 }
 
 .behavior-item:last-child {

@@ -12,6 +12,10 @@
     "public": "public",
     "rewrites": [
       {
+        "source": "/contact",
+        "function": "app"
+      },
+      {
         "source": "/community-guidelines",
         "function": "app"
       },

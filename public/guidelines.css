@@ -310,6 +310,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/* Global text selection color */
+::selection { background: #ff6b6b; color: #fff; }
+::-moz-selection { background: #ff6b6b; color: #fff; }
 
 /* Focus styles for accessibility */
 *:focus {

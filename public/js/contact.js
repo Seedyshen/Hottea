@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const btn = document.getElementById('send-btn');
   const status = document.getElementById('form-status');
 
-  const fields = [
+  // Only required fields (no star on message => optional)
+  const requiredFields = [
     { el: document.getElementById('name') },
     { el: document.getElementById('email') },
     { el: document.getElementById('subject') },
-    { el: document.getElementById('message') },
   ];
 
   function clearFieldError(el) {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Live clear error on input
-  fields.forEach(({ el }) => {
+  requiredFields.forEach(({ el }) => {
     el.addEventListener('input', () => {
       if (el.value.trim()) {
         clearFieldError(el);
@@ -43,15 +43,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Validate required fields (marked with *)
     let hasError = false;
-    fields.forEach(({ el }) => {
+    requiredFields.forEach(({ el }) => {
       if (!el.value.trim()) {
         hasError = true;
-        showFieldError(el, '该字段不能为空');
+        showFieldError(el, 'This field cannot be empty');
       }
     });
 
     if (hasError) {
-      status.textContent = '某个字段不能为空';
+      status.textContent = 'Please fill in all required fields.';
       status.classList.add('status-error');
       return; // Block submission and skip loading
     }

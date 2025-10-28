@@ -51,8 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (hasError) {
-      status.textContent = 'Please fill in all required fields.';
-      status.classList.add('status-error');
+      // Do not show a global error message; keep field-level errors only
       return; // Block submission and skip loading
     }
 

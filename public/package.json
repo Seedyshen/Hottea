@@ -1,7 +1,7 @@
 {
-  "name": "hottea-website",
+  "name": "teanote-website",
   "version": "1.0.0",
-  "description": "Hottea - 专为茶爱好者设计的移动应用官网",
+  "description": "TeaNote - 专为茶爱好者设计的移动应用官网",
   "main": "index.js",
   "scripts": {
     "build": "echo 'Build completed successfully'",
@@ -16,7 +16,7 @@
     "firebase",
     "app-hosting"
   ],
-  "author": "Hottea Team",
+  "author": "TeaNote Team",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
@@ -27,7 +27,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/hottea-team/hottea-website"
+    "url": "https://github.com/teanote-team/teanote-website"
   },
-  "homepage": "https://hottea.online"
+  "homepage": "https://teanote.online"
 }

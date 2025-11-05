@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Starting Hottea website..."
+echo "Starting TeaNote website..."
 echo "Node.js version: $(node --version)"
 echo "NPM version: $(npm --version)"
 

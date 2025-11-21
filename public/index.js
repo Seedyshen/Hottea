@@ -242,7 +242,7 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`TeaNote website is running on port ${PORT}`);
+console.log(`Spillmate website is running on port ${PORT}`);
 });
 
 module.exports = app;

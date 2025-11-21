@@ -1,6 +1,6 @@
 {
-  "name": "TeaNote - 让生活更有温度",
-  "short_name": "TeaNote",
+  "name": "Spillmate - 让生活更有温度",
+  "short_name": "Spillmate",
   "description": "专为茶爱好者设计的移动应用，提供个性化的茶叶推荐、冲泡指导和社区交流功能。",
   "start_url": "/",
   "display": "standalone",
